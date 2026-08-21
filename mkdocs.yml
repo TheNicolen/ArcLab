@@ -1,10 +1,10 @@
-site_name: ArcLab HDL Studio
+site_name: ArcLab Studio
 site_description: Entorno de desarrollo, simulación lógica y RTL estructurado.
 
 theme:
   name: material
-  logo: assets/pagina_icon.png    # <--- Aquí defines el logo que aparece en la barra superior
-  favicon: assets/pagina_icon.png # <--- Aquí defines el ícono de la pestaña del navegador
+  logo: ./assets/pagina_icon.png
+  favicon: ./assets/pagina_icon.png
   palette:
     scheme: slate
     primary: black
