@@ -19,14 +19,14 @@
     <tbody>
       <tr>
         <td style="padding: 15px 12px;">
-          <a href="#" style="color: #00e5ff; text-decoration: none; font-weight: bold; font-size: 1.1em;">
+          <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.3.2/ArcLabInstaller.exe" style="color: #00e5ff; text-decoration: none; font-weight: bold; font-size: 1.1em;">
             ArcLab Studio Installer 1.3.2: Windows 64-bit
           </a>
         </td>
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
-        <td style="padding: 15px 12px; color: #e0e0e0;">~ 11.7 KB</td>
+        <td style="padding: 15px 12px; color: #e0e0e0;">~ 12 KB</td>
         <td style="padding: 15px 12px; text-align: right;">
-          <a href="#" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Descargar</a>
+          <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.3.2/ArcLabInstaller.exe" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Descargar</a>
           </td>
         </td>
       </tr>
