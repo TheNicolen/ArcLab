@@ -36,7 +36,7 @@
 
 ---
 
-## ## ArcLab Studio 1.3.1
+## ArcLab Studio 1.3.1
 
 <div style="background-color: #1E1E1E; border: 1px solid #333; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
   <table style="width: 100%; border-collapse: collapse; color: white; margin: 0;">
@@ -66,7 +66,7 @@
   </table>
 </div>
 ---
-## ## ArcLab Studio 1.2.2
+## ArcLab Studio 1.2.2
 
 <div style="background-color: #1E1E1E; border: 1px solid #333; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
   <table style="width: 100%; border-collapse: collapse; color: white; margin: 0;">
