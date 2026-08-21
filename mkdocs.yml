@@ -1,0 +1,11 @@
+site_name: ArcLab HDL Studio
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: cyan
+nav:
+  - Inicio: index.md
+  - Descargas: descargas.md
+  - Patch Logs: changelog.md
