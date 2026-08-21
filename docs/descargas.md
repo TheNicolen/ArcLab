@@ -26,9 +26,8 @@
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
         <td style="padding: 15px 12px; color: #e0e0e0;">~ 150 MB</td>
         <td style="padding: 15px 12px; text-align: right;">
-          <a href="#" class="md-button" style="background-color: #e0e0e0; color: #141414; font-weight: bold; padding: 8px 16px;">
-            Download ⬇️
-          </a>
+          <a href="#" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Download</a>
+          </td>
         </td>
       </tr>
     </tbody>
@@ -46,12 +45,12 @@
       <tbody>
         <tr>
           <td style="padding: 10px 12px;">
-            <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.2.2/ArcLabInstaller.exe" style="color: #00e5ff; text-decoration: none;">ArcLab HDL Studio Installer 1.2.2: Windows 64-bit</a>
+            <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.2.2/ArcLabInstaller.exe" style="color: #00e5ff; text-decoration: none;">ArcLab Studio Installer 1.2.2: Windows 64-bit</a>
           </td>
           <td style="padding: 10px 12px; color: #e0e0e0;">EXE</td>
-          <td style="padding: 10px 12px; color: #e0e0e0;">145 MB</td>
+          <td style="padding: 10px 12px; color: #e0e0e0;">12 KB</td>
           <td style="padding: 10px 12px; text-align: right;">
-            <a href="#" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Download</a>
+            <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.2.2/ArcLabInstaller.exe" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Download</a>
           </td>
         </tr>
       </tbody>
