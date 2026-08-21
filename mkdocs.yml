@@ -1,11 +1,28 @@
-site_name: ArcLab Studio
+site_name: ArcLab HDL Studio
+site_description: Entorno de desarrollo, simulación lógica y RTL estructurado.
+
 theme:
   name: material
+  logo: assets/pagina_icon.png    # <--- Aquí defines el logo que aparece en la barra superior
+  favicon: assets/pagina_icon.png # <--- Aquí defines el ícono de la pestaña del navegador
   palette:
     scheme: slate
     primary: black
     accent: cyan
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
 nav:
   - Inicio: index.md
+  - Tutoriales:
+    - Uso del Entorno: tutoriales/entorno.md
+    - Implementación en FPGA (Basys 3): tutoriales/fpga.md
   - Descargas: descargas.md
   - Patch Logs: changelog.md

@@ -89,9 +89,7 @@
     <div class="steam-desc">
       Hemos corregido ciertas diferencias entre el dashboard y la imagen vectorial generada, ya no hay limitaciones para encimar etiquetas de texto, tambien se han corregido algunas deficiencias en el generados de system verilog.
     </div>
-    <div class="steam-footer">
-      <span>Leer notas completas...</span>
-    </div>
+    
   </div>
 </div>
 </a>
@@ -113,9 +111,7 @@
     <div class="steam-desc">
       ¡La actualización de agosto ya está aquí! Hemos rediseñado por completo el motor de enrutamiento. Ahora puedes configurar módulos personalizados, registros, y compuertas logicas al alcncane del click derecho, incluye mejoras sustanciales en el lienzo FSM, la generación de imagenes vecotirales ahora es más limpia y estetica, lista para incluir en informes, papers, presentaciones, etc.
     </div>
-    <div class="steam-footer">
-      <span>Leer notas completas...</span>
-    </div>
+    
   </div>
 </div>
 </a>
@@ -136,9 +132,7 @@
     <div class="steam-desc">
       Añadido el nuevo motor de álgebra booleana. Simplificación paso a paso de expresiones complejas y exportación nativa a código LaTeX para textos academicos e informes.
     </div>
-    <div class="steam-footer">
-      <span>Leer notas completas...</span>
-    </div>
+    
   </div>
 </div>
 </a>
