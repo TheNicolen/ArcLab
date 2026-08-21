@@ -24,7 +24,7 @@
           </a>
         </td>
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
-        <td style="padding: 15px 12px; color: #e0e0e0;">~ 150 MB</td>
+        <td style="padding: 15px 12px; color: #e0e0e0;">~ 11.7 KB</td>
         <td style="padding: 15px 12px; text-align: right;">
           <a href="#" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Descargar</a>
           </td>
@@ -56,7 +56,7 @@
           </a>
         </td>
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
-        <td style="padding: 15px 12px; color: #e0e0e0;">~ 150 MB</td>
+        <td style="padding: 15px 12px; color: #e0e0e0;">~ 11.7 KB</td>
         <td style="padding: 15px 12px; text-align: right;">
           <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.3.1/ArcLabInstaller.exe" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Descargar</a>
           </td>
@@ -86,7 +86,7 @@
           </a>
         </td>
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
-        <td style="padding: 15px 12px; color: #e0e0e0;">~ 150 MB</td>
+        <td style="padding: 15px 12px; color: #e0e0e0;">~ 11.7 KB</td>
         <td style="padding: 15px 12px; text-align: right;">
           <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.2.2/ArcLabInstaller.exe" class="md-button" style="background-color: transparent; border: 1px solid #00e5ff; color: #00e5ff;">Descargar</a>
           </td>

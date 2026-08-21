@@ -87,7 +87,7 @@
     <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
     <h3 class="steam-title">ArcLab Update 1.3.2 - Módulos y Múltiples Salidas</h3>
     <div class="steam-desc">
-      Hemos corregido ciertas diferencias entre el dashboard y la imagen vectorial generada, ya no hay limitaciones para encimar etiquetas de texto, tambien se han corregido algunas deficiencias en el generados de system verilog.
+      Hemos corregido ciertas diferencias entre el dashboard y la imagen vectorial generada, ya no hay limitaciones para encimar etiquetas de texto, tambien se han corregido algunas deficiencias en el generador de RTL.
     </div>
     
   </div>
@@ -109,7 +109,7 @@
     <div class="steam-tag">ACTUALIZACIÓN MAYOR / NOTAS DE PARCHE</div>
     <h3 class="steam-title">ArcLab Update 1.3.1 - Módulos y Múltiples Salidas</h3>
     <div class="steam-desc">
-      ¡La actualización de agosto ya está aquí! Hemos rediseñado por completo el motor de enrutamiento. Ahora puedes configurar módulos personalizados, registros, y compuertas logicas al alcncane del click derecho, incluye mejoras sustanciales en el lienzo FSM, la generación de imagenes vecotirales ahora es más limpia y estetica, lista para incluir en informes, papers, presentaciones, etc.
+        Hemos rediseñado por completo el motor de enrutamiento. Ahora puedes configurar módulos personalizados, registros, y compuertas logicas al alcncane del click derecho, incluye mejoras sustanciales en el lienzo FSM, la generación de imagenes vecotirales ahora es más limpia y estetica, lista para incluir en informes, papers, presentaciones, etc.
     </div>
     
   </div>

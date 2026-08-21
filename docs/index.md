@@ -27,10 +27,10 @@ hide:
 ## Flujo de Diseño Optimizado
 ArcLab está construido para acortar la curva de aprendizaje en sistemas digitales:
 
-1. **Esquemáticos Visuales:** Dibuja circuitos con compuertas logicas, modulos y registros y genera una imagen lista para añadir a tus informes.
-2. **Máquinas de Estado:** Diseña modelos Moore y Mealy con previsualización en tiempo real.
+1. **Esquemáticos Visuales:** Dibuja circuitos con compuertas logicas, modulos y registros, además genera una imagen lista para añadir a tus informes.
+2. **Máquinas de Estado:** Diseña maquinas de Moore y Mealy con previsualización en tiempo real.
 3. **Síntesis y RTL:** Traduce tus diagramas visuales a **SystemVerilog** estructurado listo para implementarse, o convierte tu RTL a diagramas logicos con un solo click.
 
 ## Herramientas Integradas
-* **Álgebra Booleana:** Motor de simplificación paso a paso y exportación a LaTeX.
+* **Álgebra Booleana:** Motor de simplificación paso a paso con axiomas del algebra de Boole y exportación a LaTeX.
 * **Diagramas de Tiempo:** Análisis de ticks y señales para depuración de circuitos secuenciales.
