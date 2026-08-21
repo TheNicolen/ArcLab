@@ -1,7 +1,7 @@
 ---
 hide:
   
-  - toc
+  
 ---
 
 <div align="center" style="margin-top: 40px; margin-bottom: 60px;">
