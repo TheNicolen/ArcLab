@@ -1,5 +1,6 @@
 site_name: ArcLab Studio
 site_description: Entorno de desarrollo, simulación lógica y RTL estructurado.
+site_url: https://thenicolen.github.io/ArcLab/ 
 
 theme:
   name: material
