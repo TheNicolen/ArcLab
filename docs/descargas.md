@@ -1,7 +1,7 @@
 # Centro de Descargas
 
 <p style="font-size: 1.1em; color: #b0bec5; margin-bottom: 30px;">
-  Obtén la versión más reciente de ArcLab Studio. Asegúrate de revisar los requisitos del sistema antes de instalar.
+  ArcLab Studio sigue en desarrollo, asegurate de obtener la ultima versión para contar con todas las herramientas y correcciones realizadas.
 </p>
 
 ## ArcLab HDL Studio 1.3.1
@@ -46,7 +46,7 @@
       <tbody>
         <tr>
           <td style="padding: 10px 12px;">
-            <a href="#" style="color: #00e5ff; text-decoration: none;">ArcLab HDL Studio Installer 1.2.2: Windows 64-bit</a>
+            <a href="https://github.com/TheNicolen/ArcLab/releases/download/v1.2.2/ArcLabInstaller.exe" style="color: #00e5ff; text-decoration: none;">ArcLab HDL Studio Installer 1.2.2: Windows 64-bit</a>
           </td>
           <td style="padding: 10px 12px; color: #e0e0e0;">EXE</td>
           <td style="padding: 10px 12px; color: #e0e0e0;">145 MB</td>
