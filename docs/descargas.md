@@ -20,7 +20,7 @@
       <tr>
         <td style="padding: 15px 12px;">
           <a href="#" style="color: #00e5ff; text-decoration: none; font-weight: bold; font-size: 1.1em;">
-            ArcLab HDL Studio Installer 2026.1: Windows 64-bit
+            ArcLab Studio Installer: Windows 64-bit
           </a>
         </td>
         <td style="padding: 15px 12px; color: #e0e0e0;">EXE</td>
@@ -39,7 +39,7 @@
 ## Archivos Anteriores
 
 <details>
-  <summary style="cursor: pointer; color: #00e5ff; font-weight: bold; padding: 10px 0;">ArcLab Studio 1.3.1</summary>
+  <summary style=" color: #00e5ff; font-weight: bold; padding: 10px 0;">ArcLab Studio 1.2.2</summary>
   <div style="background-color: #1E1E1E; border: 1px solid #333; border-radius: 8px; padding: 20px; margin-top: 10px;">
     <table style="width: 100%; border-collapse: collapse; color: white; margin: 0;">
       <tbody>
