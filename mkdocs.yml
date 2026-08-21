@@ -3,8 +3,8 @@ site_description: Entorno de desarrollo, simulación lógica y RTL estructurado.
 
 theme:
   name: material
-  logo: ./assets/pagina_icon.png
-  favicon: ./assets/pagina_icon.png
+  logo: assets/pagina_icon.png
+  favicon: assets/pagina_icon.png
   palette:
     scheme: slate
     primary: black
