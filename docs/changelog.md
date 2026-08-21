@@ -120,7 +120,7 @@
 </div>
 </a>
 
-<div class="date-header">17 DE MAYO</div>
+<div class="date-header">17 DE AGOSTO</div>
 <div class="date-divider"></div>
 
 <a href="#v20252" style="text-decoration: none;">
@@ -131,7 +131,7 @@
     </div>
   </div>
   <div class="steam-content">
-    <div class="steam-tag">ACTUALIZACIÓN MENOR</div>
+    <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
     <h3 class="steam-title">ArcLab Update 1.2.2 - Motor Algebraico</h3>
     <div class="steam-desc">
       Añadido el nuevo motor de álgebra booleana. Simplificación paso a paso de expresiones complejas y exportación nativa a código LaTeX para textos academicos e informes.
@@ -142,24 +142,3 @@
   </div>
 </div>
 </a>
-
----
-
-<br><br>
-
-<h2 id="v20261">Detalles del Parche 2026.1</h2>
-
-**Nuevas Características:**
-* **Módulos configurables:** Capacidad para definir componentes de `0-5` entradas y `1-5` salidas.
-* **Interfaz interactiva:** Los cables ahora reconocen el índice específico del pin de salida origen.
-* **Generación SVG mejorada:** Los esquemáticos exportados ahora reflejan con precisión geométrica los módulos complejos.
-
-**Correcciones de Errores:**
-* Solucionado un problema crítico donde el `Stack` interceptaba clics destinados al menú contextual del lienzo.
-* Corregido el despiste de variables indefinidas en la función FSM.
-
-<br>
-
-<h2 id="v20252">Detalles del Parche 2025.2</h2>
-* Implementación del evaluador booleano en hoja técnica.
-* Soporte para sintaxis implícita en operaciones AND.
