@@ -72,7 +72,7 @@
   margin-bottom: 15px;
 }
 </style>
-<div class="date-header">20 DE AGOSTO</div>
+<div class="date-header">21 DE AGOSTO</div>
 <div class="date-divider"></div>
 
 <a href="#v20261" style="text-decoration: none;">
@@ -85,9 +85,9 @@
   </div>
   <div class="steam-content">
     <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
-    <h3 class="steam-title">ArcLab Update 1.3.2 - Módulos y Múltiples Salidas</h3>
+    <h3 class="steam-title">ArcLab Update 1.3.2 - Simulador de circuitos combinacionales</h3>
     <div class="steam-desc">
-      Hemos corregido ciertas diferencias entre el dashboard y la imagen vectorial generada, ya no hay limitaciones para encimar etiquetas de texto, tambien se han corregido algunas deficiencias en el generador de RTL.
+      Hemos corregido ciertos errores en la reducción de ecuaciones de algebra booleana y añadido un simulador de circuitos logicos combinacionales, para probar tu diagrama logico solo debes presionar en "Simular en vivo" y podrás ver como respond el cirucito y sus nodos frente a disitintas combianciones de entradas, solo debes hacer click derecho sobre als entradas para cambiar su valor entre 1 y 0
     </div>
     
   </div>
