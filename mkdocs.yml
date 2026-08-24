@@ -22,6 +22,6 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Tutoriales:tutoriales.md
+  - Tutoriales: tutoriales.md
   - Descargas: descargas.md
   - Patch Logs: changelog.md
