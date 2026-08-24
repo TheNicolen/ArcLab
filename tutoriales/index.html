@@ -1,0 +1,2423 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Entorno de desarrollo, simulación lógica y RTL estructurado.">
+      
+      
+      
+        <link rel="canonical" href="https://thenicolen.github.io/ArcLab/tutoriales/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../descargas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/app_icon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Tutoriales - ArcLab Studio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ArcLab Studio" class="md-header__button md-logo" aria-label="ArcLab Studio" data-md-component="logo">
+      
+  <img src="../assets/app_icon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ArcLab Studio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutoriales
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutoriales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../descargas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Descargas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Patch Logs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ArcLab Studio" class="md-nav__button md-logo" aria-label="ArcLab Studio" data-md-component="logo">
+      
+  <img src="../assets/app_icon.ico" alt="logo">
+
+    </a>
+    ArcLab Studio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutoriales
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutoriales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hide:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primeros pasos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeros pasos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-interfaz-de-arclab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La interfaz de ArcLab
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La interfaz de ArcLab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explorador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explorador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barra-de-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barra de herramientas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Área de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-ingenieria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Herramientas de ingeniería
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-esquema-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Esquema lógico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Esquema lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-puedes-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué puedes hacer?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un circuito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear un circuito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agregar-compuertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar compuertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectar-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conectar componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-sumador-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: sumador completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo: sumador completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-del-esquema-logico-al-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Del esquema lógico al RTL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Del esquema lógico al RTL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-el-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear el diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generar-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generar RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisar-el-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisar el código
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-del-rtl-al-esquema-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Del RTL al esquema lógico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Del RTL al esquema lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introducir-el-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducir el RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generar-el-esquema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generar el esquema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretar-el-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretar el resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-maquinas-de-estado-finito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Máquinas de Estado Finito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Máquinas de Estado Finito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos fundamentales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-maquinas-de-moore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Máquinas de Moore
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Máquinas de Moore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-maquina-de-moore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una máquina de Moore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-las-salidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir las salidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-detector-de-secuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: detector de secuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generacion-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generación RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-maquinas-de-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Máquinas de Mealy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Máquinas de Mealy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-maquina-de-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una máquina de Mealy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-las-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir las transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-detector-de-secuencia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: detector de secuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-vs-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moore vs Mealy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diagramas-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diagramas de tiempo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Diagramas de tiempo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos básicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos básicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#senales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Señales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ticks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flancos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flancos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un diagrama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analizar-el-comportamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analizar el comportamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-contador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: contador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-resolvedor-de-algebra-booleana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Resolvedor de Álgebra Booleana
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Resolvedor de Álgebra Booleana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ingresar-una-expresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ingresar una expresión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplificacion-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplificación paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportar-a-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportar a LaTeX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejercicio-integrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejercicio integrador
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ejercicio integrador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-controlador-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto: controlador digital
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyecto: controlador digital">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-disenar-la-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1 — Diseñar la lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-disenar-la-fsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2 — Diseñar la FSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-generar-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3 — Generar RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-analizar-las-senales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4 — Analizar las señales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-simplificar-la-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5 — Simplificar la lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado final
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../descargas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descargas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patch Logs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hide:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primeros pasos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeros pasos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-interfaz-de-arclab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La interfaz de ArcLab
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La interfaz de ArcLab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explorador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explorador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barra-de-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barra de herramientas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Área de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-ingenieria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Herramientas de ingeniería
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-esquema-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Esquema lógico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Esquema lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-puedes-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué puedes hacer?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un circuito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear un circuito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agregar-compuertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar compuertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectar-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conectar componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-sumador-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: sumador completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo: sumador completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-del-esquema-logico-al-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Del esquema lógico al RTL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Del esquema lógico al RTL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-el-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear el diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generar-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generar RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisar-el-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisar el código
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-del-rtl-al-esquema-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Del RTL al esquema lógico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Del RTL al esquema lógico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introducir-el-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducir el RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generar-el-esquema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generar el esquema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretar-el-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretar el resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-maquinas-de-estado-finito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Máquinas de Estado Finito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Máquinas de Estado Finito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos fundamentales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-maquinas-de-moore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Máquinas de Moore
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Máquinas de Moore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-maquina-de-moore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una máquina de Moore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-las-salidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir las salidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-detector-de-secuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: detector de secuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generacion-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generación RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-maquinas-de-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Máquinas de Mealy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Máquinas de Mealy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-maquina-de-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una máquina de Mealy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-las-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir las transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-detector-de-secuencia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: detector de secuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-vs-mealy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moore vs Mealy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diagramas-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diagramas de tiempo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Diagramas de tiempo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos básicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos básicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#senales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Señales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ticks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flancos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flancos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un diagrama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analizar-el-comportamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analizar el comportamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-contador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: contador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-resolvedor-de-algebra-booleana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Resolvedor de Álgebra Booleana
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Resolvedor de Álgebra Booleana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ingresar-una-expresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ingresar una expresión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplificacion-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplificación paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportar-a-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportar a LaTeX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejercicio-integrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejercicio integrador
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ejercicio integrador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-controlador-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto: controlador digital
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyecto: controlador digital">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-disenar-la-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1 — Diseñar la lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-disenar-la-fsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2 — Diseñar la FSM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-generar-rtl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3 — Generar RTL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-analizar-las-senales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4 — Analizar las señales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-simplificar-la-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5 — Simplificar la lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado final
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<hr />
+<h2 id="hide">hide:</h2>
+<div align="center" style="margin-top: 40px; margin-bottom: 55px;">
+
+  <p style="color: #00e5ff; font-size: 0.9em; letter-spacing: 3px; margin-bottom: 10px;">
+    ARCLAB STUDIO
+  </p>
+
+  <h1 style="font-size: 3em; font-weight: bold; margin-bottom: 15px;">
+    Tutoriales
+  </h1>
+
+  <p style="
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #b0bec5;
+    line-height: 1.7;
+  ">
+    Aprende a utilizar ArcLab y descubre cómo diseñar,
+    analizar y transformar sistemas digitales desde una
+    única herramienta.
+  </p>
+
+</div>
+
+<hr />
+<h1 id="primeros-pasos">Primeros pasos</h1>
+<p>Si es la primera vez que utilizas ArcLab, comienza aquí.</p>
+<p>En esta sección conocerás la interfaz del programa, aprenderás a crear un diseño y descubrirás las principales herramientas disponibles.</p>
+<div style="
+  margin: 30px 0 45px 0;
+  padding: 25px;
+  border-left: 3px solid #00e5ff;
+  background: #20232b;
+">
+
+<strong style="color: #00e5ff;">Ruta recomendada</strong>
+
+<br><br>
+
+**Interfaz → Esquema lógico → Simulación → RTL → Exportación**
+
+</div>
+
+<h2 id="la-interfaz-de-arclab">La interfaz de ArcLab</h2>
+<p>ArcLab está dividido en diferentes áreas que permiten construir y analizar un diseño digital.</p>
+<!-- IMAGEN: captura general de la interfaz -->
+
+<p><img alt="Interfaz de ArcLab" src="images/tutoriales/interfaz.png" /></p>
+<h3 id="explorador">Explorador</h3>
+<p>Permite visualizar los módulos y elementos que forman parte del proyecto.</p>
+<h3 id="barra-de-herramientas">Barra de herramientas</h3>
+<p>Contiene las herramientas necesarias para agregar entradas, salidas, compuertas, módulos y otras funciones.</p>
+<h3 id="area-de-diseno">Área de diseño</h3>
+<p>Es el espacio principal donde se construye y organiza el circuito.</p>
+<h3 id="herramientas-de-ingenieria">Herramientas de ingeniería</h3>
+<p>Desde esta zona es posible acceder a funciones como la generación de RTL, síntesis y otras herramientas de análisis.</p>
+<hr />
+<h1 id="1-esquema-logico">1. Esquema lógico</h1>
+<p>Aprende a construir circuitos digitales utilizando la interfaz gráfica de ArcLab.</p>
+<p>Los esquemas lógicos permiten representar visualmente la estructura de un circuito mediante entradas, salidas, compuertas, módulos y conexiones.</p>
+<h2 id="que-puedes-hacer">¿Qué puedes hacer?</h2>
+<ul>
+<li>Crear entradas y salidas.</li>
+<li>Agregar compuertas lógicas.</li>
+<li>Conectar componentes.</li>
+<li>Utilizar módulos.</li>
+<li>Organizar circuitos complejos.</li>
+<li>Simular el comportamiento del diseño.</li>
+<li>Exportar el esquema como imagen.</li>
+</ul>
+<!-- IMAGEN: esquema lógico terminado -->
+
+<h2 id="crear-un-circuito">Crear un circuito</h2>
+<p>Para comenzar un diseño, agrega las entradas y salidas necesarias para representar el circuito.</p>
+<!-- IMAGEN: agregar INPUT y OUTPUT -->
+
+<h3 id="agregar-compuertas">Agregar compuertas</h3>
+<p>ArcLab permite utilizar diferentes compuertas lógicas, entre ellas:</p>
+<ul>
+<li>AND</li>
+<li>OR</li>
+<li>XOR</li>
+<li>NOT</li>
+</ul>
+<!-- IMAGEN: barra de compuertas -->
+
+<h2 id="conectar-componentes">Conectar componentes</h2>
+<p>Las conexiones permiten definir el flujo de información entre los diferentes elementos del circuito.</p>
+<!-- IMAGEN: conexión entre compuertas -->
+
+<h2 id="ejemplo-sumador-completo">Ejemplo: sumador completo</h2>
+<p>Como primer ejercicio construiremos un <strong>Full Adder</strong>.</p>
+<p>El circuito contará con:</p>
+<ul>
+<li>Entrada <code>A</code></li>
+<li>Entrada <code>B</code></li>
+<li>Entrada <code>Cin</code></li>
+<li>Salida <code>Sum</code></li>
+<li>Salida <code>Cout</code></li>
+</ul>
+<!-- IMAGEN: full adder -->
+
+<h3 id="resultado">Resultado</h3>
+<p>Al finalizar deberías obtener un circuito similar al siguiente:</p>
+<!-- IMAGEN: resultado full adder -->
+
+<hr />
+<h1 id="2-del-esquema-logico-al-rtl">2. Del esquema lógico al RTL</h1>
+<p>ArcLab permite transformar un diseño gráfico en código RTL utilizando SystemVerilog.</p>
+<p>El flujo general es:</p>
+<div align="center" style="
+  margin: 35px 0;
+  font-size: 1.1em;
+">
+
+<strong>Esquema lógico</strong>
+   →    <strong>ArcLab</strong>
+   →    <strong>SystemVerilog</strong>
+
+</div>
+
+<h2 id="crear-el-diseno">Crear el diseño</h2>
+<p>Primero construye el circuito utilizando las herramientas de esquemáticos.</p>
+<!-- IMAGEN: circuito antes de generar RTL -->
+
+<h2 id="generar-rtl">Generar RTL</h2>
+<p>Una vez terminado el diseño, utiliza la herramienta de generación de código para obtener la descripción RTL.</p>
+<!-- IMAGEN: botón Ver Código Generado -->
+
+<h2 id="revisar-el-codigo">Revisar el código</h2>
+<p>ArcLab generará una descripción SystemVerilog equivalente al circuito.</p>
+<p>Por ejemplo:</p>
+<pre><code class="language-systemverilog">module full_adder(
+    input  logic a,
+    input  logic b,
+    input  logic cin,
+    output logic sum,
+    output logic cout
+);
+
+    assign sum  = a ^ b ^ cin;
+    assign cout = (a &amp; b) | (cin &amp; (a ^ b));
+
+endmodule
+</code></pre>
+<!-- IMAGEN: código SystemVerilog generado -->
+
+<p>El código generado puede utilizarse posteriormente como punto de partida para la implementación del diseño en una FPGA u otra plataforma compatible con SystemVerilog.</p>
+<hr />
+<h1 id="3-del-rtl-al-esquema-logico">3. Del RTL al esquema lógico</h1>
+<p>El flujo también puede realizarse en sentido contrario.</p>
+<p>ArcLab puede analizar una descripción RTL y construir una representación visual del circuito.</p>
+<div align="center" style="
+  margin: 35px 0;
+  font-size: 1.1em;
+">
+
+<strong>SystemVerilog</strong>
+   →    <strong>Analizador RTL</strong>
+   →    <strong>Esquema lógico</strong>
+
+</div>
+
+<h2 id="introducir-el-rtl">Introducir el RTL</h2>
+<p>Comienza con un módulo SystemVerilog.</p>
+<p>Por ejemplo:</p>
+<pre><code class="language-systemverilog">module logic_example(
+    input  logic a,
+    input  logic b,
+    input  logic c,
+    output logic y
+);
+
+    assign y = (a &amp; b) | c;
+
+endmodule
+</code></pre>
+<!-- IMAGEN: editor SystemVerilog -->
+
+<h2 id="generar-el-esquema">Generar el esquema</h2>
+<p>ArcLab analiza la estructura del módulo y genera una representación gráfica de la lógica.</p>
+<!-- IMAGEN: botón de generación de esquema -->
+
+<h2 id="interpretar-el-resultado">Interpretar el resultado</h2>
+<p>El esquema generado permite visualizar:</p>
+<ul>
+<li>Entradas.</li>
+<li>Salidas.</li>
+<li>Operaciones lógicas.</li>
+<li>Módulos.</li>
+<li>Conexiones.</li>
+<li>Jerarquía del diseño.</li>
+</ul>
+<!-- IMAGEN: RTL convertido a esquema -->
+
+<hr />
+<h1 id="4-maquinas-de-estado-finito">4. Máquinas de Estado Finito</h1>
+<p>ArcLab permite diseñar máquinas de estado finito utilizando representaciones gráficas.</p>
+<p>Las FSM pueden utilizarse para modelar sistemas secuenciales como:</p>
+<ul>
+<li>Controladores.</li>
+<li>Detectores de secuencia.</li>
+<li>Protocolos.</li>
+<li>Sistemas de control.</li>
+<li>Secuenciadores.</li>
+</ul>
+<h2 id="conceptos-fundamentales">Conceptos fundamentales</h2>
+<p>Una máquina de estados está compuesta principalmente por:</p>
+<p><strong>Estados → Transiciones → Entradas → Salidas</strong></p>
+<!-- IMAGEN: FSM sencilla -->
+
+<h2 id="flujo-de-diseno">Flujo de diseño</h2>
+<p>Una máquina de estados puede construirse siguiendo este proceso:</p>
+<div align="center" style="
+  margin: 35px 0;
+  line-height: 2;
+">
+
+<strong>Definir estados</strong> <br>
+↓ <br> <strong>Definir entradas y salidas</strong> <br>
+↓ <br> <strong>Definir transiciones</strong> <br>
+↓ <br> <strong>Analizar el comportamiento</strong> <br>
+↓ <br> <strong>Generar RTL</strong>
+
+</div>
+
+<hr />
+<h1 id="5-maquinas-de-moore">5. Máquinas de Moore</h1>
+<p>En una máquina de Moore, las salidas dependen únicamente del estado actual.</p>
+<pre><code class="language-text">Estado actual → Salida
+</code></pre>
+<h2 id="crear-una-maquina-de-moore">Crear una máquina de Moore</h2>
+<p>Comienza definiendo los estados necesarios para representar el comportamiento del sistema.</p>
+<!-- IMAGEN: creación de estados Moore -->
+
+<h2 id="definir-transiciones">Definir transiciones</h2>
+<p>Las transiciones determinan cómo la máquina cambia de un estado a otro dependiendo de las entradas.</p>
+<!-- IMAGEN: transiciones Moore -->
+
+<h2 id="definir-las-salidas">Definir las salidas</h2>
+<p>Cada estado puede tener asociada una salida determinada.</p>
+<!-- IMAGEN: salidas Moore -->
+
+<h2 id="ejemplo-detector-de-secuencia">Ejemplo: detector de secuencia</h2>
+<p>Como ejercicio podemos construir un detector de una secuencia binaria.</p>
+<!-- IMAGEN: detector de secuencia Moore -->
+
+<h2 id="generacion-rtl">Generación RTL</h2>
+<p>Una vez terminado el diseño, ArcLab puede utilizar la información de la máquina de estados para generar su descripción RTL.</p>
+<!-- IMAGEN: Moore a RTL -->
+
+<hr />
+<h1 id="6-maquinas-de-mealy">6. Máquinas de Mealy</h1>
+<p>En una máquina de Mealy, las salidas dependen del estado actual y de las entradas.</p>
+<pre><code class="language-text">Estado actual + Entrada → Salida
+</code></pre>
+<h2 id="crear-una-maquina-de-mealy">Crear una máquina de Mealy</h2>
+<p>Define inicialmente los estados necesarios para representar el comportamiento.</p>
+<!-- IMAGEN: creación FSM Mealy -->
+
+<h2 id="definir-las-transiciones">Definir las transiciones</h2>
+<p>Cada transición puede asociarse con las condiciones de entrada y las salidas correspondientes.</p>
+<!-- IMAGEN: transición Mealy -->
+
+<h2 id="ejemplo-detector-de-secuencia_1">Ejemplo: detector de secuencia</h2>
+<p>Construiremos un detector de secuencia utilizando una máquina de Mealy.</p>
+<!-- IMAGEN: detector de secuencia Mealy -->
+
+<h2 id="moore-vs-mealy">Moore vs Mealy</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Moore</th>
+<th>Mealy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salida depende de</td>
+<td>Estado</td>
+<td>Estado + entrada</td>
+</tr>
+<tr>
+<td>Cambio de salida</td>
+<td>Asociado al estado</td>
+<td>Asociado a transición</td>
+</tr>
+<tr>
+<td>Representación</td>
+<td>Estado → salida</td>
+<td>Transición → salida</td>
+</tr>
+<tr>
+<td>Aplicación</td>
+<td>Control secuencial</td>
+<td>Respuesta rápida a entradas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="7-diagramas-de-tiempo">7. Diagramas de tiempo</h1>
+<p>Los diagramas de tiempo permiten observar cómo evolucionan las señales digitales a través del tiempo.</p>
+<p>Son especialmente útiles para analizar circuitos secuenciales y máquinas de estado.</p>
+<h2 id="conceptos-basicos">Conceptos básicos</h2>
+<h3 id="senales">Señales</h3>
+<p>Representan los valores de las entradas, salidas y señales internas del circuito.</p>
+<h3 id="ticks">Ticks</h3>
+<p>Representan los pasos temporales utilizados para analizar el comportamiento.</p>
+<h3 id="flancos">Flancos</h3>
+<p>Permiten identificar cambios de estado en señales digitales.</p>
+<!-- IMAGEN: diagrama de tiempo -->
+
+<h2 id="crear-un-diagrama">Crear un diagrama</h2>
+<p>Selecciona las señales que deseas analizar y agrega sus valores correspondientes.</p>
+<!-- IMAGEN: creación de timing diagram -->
+
+<h2 id="analizar-el-comportamiento">Analizar el comportamiento</h2>
+<p>Utiliza el diagrama para observar:</p>
+<ul>
+<li>Cambios de estado.</li>
+<li>Respuestas a entradas.</li>
+<li>Señales de reloj.</li>
+<li>Secuencias de activación.</li>
+<li>Errores de comportamiento.</li>
+</ul>
+<!-- IMAGEN: análisis de señales -->
+
+<h2 id="ejemplo-contador">Ejemplo: contador</h2>
+<p>Podemos utilizar un contador para observar cómo cambian sus salidas en cada ciclo de reloj.</p>
+<!-- IMAGEN: contador timing -->
+
+<hr />
+<h1 id="8-resolvedor-de-algebra-booleana">8. Resolvedor de Álgebra Booleana</h1>
+<p>ArcLab incorpora una herramienta para trabajar con expresiones de álgebra booleana y observar su simplificación paso a paso.</p>
+<h2 id="ingresar-una-expresion">Ingresar una expresión</h2>
+<p>Introduce la función lógica que deseas simplificar.</p>
+<!-- IMAGEN: entrada algebra booleana -->
+
+<h2 id="operadores">Operadores</h2>
+<p>Dependiendo de la sintaxis disponible en ArcLab, pueden utilizarse operadores como:</p>
+<table>
+<thead>
+<tr>
+<th>Operación</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AND</td>
+<td><code>A · B</code></td>
+</tr>
+<tr>
+<td>OR</td>
+<td><code>A + B</code></td>
+</tr>
+<tr>
+<td>NOT</td>
+<td><code>¬A</code></td>
+</tr>
+<tr>
+<td>XOR</td>
+<td><code>A ⊕ B</code></td>
+</tr>
+</tbody>
+</table>
+<!-- IMAGEN: operadores -->
+
+<h2 id="simplificacion-paso-a-paso">Simplificación paso a paso</h2>
+<p>El resolvedor muestra las transformaciones aplicadas a la expresión hasta obtener una forma simplificada.</p>
+<p>Por ejemplo:</p>
+<pre><code class="language-text">F = A·B + A·¬B
+</code></pre>
+<p>Aplicando factorización:</p>
+<pre><code class="language-text">F = A(B + ¬B)
+</code></pre>
+<p>Utilizando la ley del complemento:</p>
+<pre><code class="language-text">F = A
+</code></pre>
+<!-- IMAGEN: simplificación paso a paso -->
+
+<h2 id="exportar-a-latex">Exportar a LaTeX</h2>
+<p>Una vez obtenida la expresión final, puedes utilizar el resultado para incorporarlo directamente en documentación matemática o informes.</p>
+<!-- IMAGEN: exportación LaTeX -->
+
+<hr />
+<h1 id="9-ejercicio-integrador">9. Ejercicio integrador</h1>
+<p>Una vez que conozcas las herramientas principales de ArcLab, puedes combinarlas en un mismo proyecto.</p>
+<h2 id="proyecto-controlador-digital">Proyecto: controlador digital</h2>
+<p>Como ejercicio final puedes construir un sistema que combine:</p>
+<ul>
+<li>Esquema lógico.</li>
+<li>Máquina de estados.</li>
+<li>SystemVerilog.</li>
+<li>Diagramas de tiempo.</li>
+<li>Álgebra Booleana.</li>
+</ul>
+<h3 id="paso-1-disenar-la-logica">Paso 1 — Diseñar la lógica</h3>
+<!-- IMAGEN -->
+
+<h3 id="paso-2-disenar-la-fsm">Paso 2 — Diseñar la FSM</h3>
+<!-- IMAGEN -->
+
+<h3 id="paso-3-generar-rtl">Paso 3 — Generar RTL</h3>
+<!-- IMAGEN -->
+
+<h3 id="paso-4-analizar-las-senales">Paso 4 — Analizar las señales</h3>
+<!-- IMAGEN -->
+
+<h3 id="paso-5-simplificar-la-logica">Paso 5 — Simplificar la lógica</h3>
+<!-- IMAGEN -->
+
+<h3 id="resultado-final">Resultado final</h3>
+<p>El objetivo es obtener un diseño completo que pueda ser analizado desde diferentes representaciones dentro de ArcLab.</p>
+<hr />
+<div align="center" style="
+  margin: 80px auto 40px auto;
+  padding: 45px 20px;
+  border-top: 1px solid #30343d;
+  border-bottom: 1px solid #30343d;
+">
+
+  <p style="
+    color: #00e5ff;
+    letter-spacing: 2px;
+    font-size: 0.85em;
+  ">
+    ARCLAB STUDIO
+  </p>
+
+  <h2 style="margin-bottom: 15px;">
+    Aprende. Diseña. Implementa.
+  </h2>
+
+  <p style="
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b0bec5;
+    line-height: 1.7;
+  ">
+    Explora las herramientas de ArcLab y desarrolla tus propios
+    sistemas digitales desde el esquema hasta el RTL.
+  </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
