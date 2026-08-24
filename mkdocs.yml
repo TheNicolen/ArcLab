@@ -22,8 +22,6 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Tutoriales:
-    - Uso del Entorno: tutoriales/entorno.md
-    - Implementación en FPGA (Basys 3): tutoriales/fpga.md
+  - Tutoriales:tutoriales.md
   - Descargas: descargas.md
   - Patch Logs: changelog.md
