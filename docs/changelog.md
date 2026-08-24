@@ -85,6 +85,29 @@
   </div>
   <div class="steam-content">
     <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
+    <h3 class="steam-title">ArcLab Update 1.3.3 - mejora en la generación de RTL</h3>
+    <div class="steam-desc">
+      Hemos mejorado la redacción del texto descriptivo en system verilog, ahora tiene una estructura mucho más legible y limpia, ideal para diseños rapidos y llevar directamente a implementación sin la necesidad de tener que renombrar nodos, entradas y salidas. Además ahora te notificaremos cuando este disponible una nueva actulización, solo deberás pinchar la ventana emergente y te enviará al centro de descargas para que puedas actualizar tu versión con las nuevas cosas que tengamos para ti <3>
+    </div>
+    
+  </div>
+</div>
+</a>
+
+</style>
+<div class="date-header">21 DE AGOSTO</div>
+<div class="date-divider"></div>
+
+<a href="#v20261" style="text-decoration: none;">
+<div class="steam-card">
+  <div class="steam-img-container">
+    <!-- Aquí pondrás una imagen real luego, por ahora es un placeholder con gradiente -->
+    <div style="width:100%; height:100%; min-height:160px; background:linear-gradient(45deg, #0f2027, #203a43, #2c5364); display:flex; align-items:center; justify-content:center;">
+       <span style="color:#00e5ff; font-size:50px;">🔧</span>
+    </div>
+  </div>
+  <div class="steam-content">
+    <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
     <h3 class="steam-title">ArcLab Update 1.3.2 - Simulador de circuitos combinacionales</h3>
     <div class="steam-desc">
       Hemos corregido ciertos errores en la reducción de ecuaciones de algebra booleana y añadido un simulador de circuitos logicos combinacionales, para probar tu diagrama logico solo debes presionar en "Simular en vivo" y podrás ver como respond el cirucito y sus nodos frente a disitintas combianciones de entradas, solo debes hacer click derecho sobre als entradas para cambiar su valor entre 1 y 0
