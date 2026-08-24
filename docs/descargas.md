@@ -1,7 +1,7 @@
 # Centro de Descargas
 
 <p style="font-size: 1.1em; color: #b0bec5; margin-bottom: 30px;">
-  ArcLab Studio sigue en desarrollo, asegurate de obtener la ultima versión para contar con todas las herramientas y correcciones realizadas.
+  ArcLab Studio sigue en desarrollo, y continuamente vamos agregando cambios que mejoran las capacidades del software, asegurate de obtener la ultima versión para contar con todas las herramientas y correcciones realizadas, puedes revisar el Patch log para informrte sobre los cambios entre versiones.
 </p>
 
 ## ArcLab Studio 1.3.3
