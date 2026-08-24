@@ -59,7 +59,7 @@ hide:
 ">
 
   <img
-    src="assets/appicon.ico"
+    src="assets/app_icon.ico"
     alt="Interfaz de ArcLab Studio"
     style="
       display: block;
