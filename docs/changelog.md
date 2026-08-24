@@ -87,7 +87,7 @@
     <div class="steam-tag">ACTUALIZACIÓN MENOR / NOTAS DE PARCHE</div>
     <h3 class="steam-title">ArcLab Update 1.3.3 - mejora en la generación de RTL</h3>
     <div class="steam-desc">
-      Hemos mejorado la redacción del texto descriptivo en system verilog, ahora tiene una estructura mucho más legible y limpia, ideal para diseños rapidos y llevar directamente a implementación sin la necesidad de tener que renombrar nodos, entradas y salidas. Además ahora te notificaremos cuando este disponible una nueva actulización, solo deberás pinchar la ventana emergente y te enviará al centro de descargas para que puedas actualizar tu versión con las nuevas cosas que tengamos para ti <3>
+      Hemos mejorado la redacción del texto descriptivo en system verilog, ahora tiene una estructura mucho más legible y limpia, ideal para diseños rapidos y llevar directamente a implementación sin la necesidad de tener que renombrar nodos, entradas y salidas. Además ahora te notificaremos cuando este disponible una nueva actulización, solo deberás pinchar la ventana emergente y te enviará al centro de descargas para que puedas actualizar tu versión con las nuevas cosas que tengamos para ti <3 >
     </div>
     
   </div>
