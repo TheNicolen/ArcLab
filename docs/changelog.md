@@ -72,6 +72,28 @@
   margin-bottom: 15px;
 }
 </style>
+<div class="date-header">4 DE SEPTIEMBRE</div>
+<div class="date-divider"></div>
+
+<a href="#v20261" style="text-decoration: none;">
+<div class="steam-card">
+  <div class="steam-img-container">
+    <!-- Aquí pondrás una imagen real luego, por ahora es un placeholder con gradiente -->
+    <div style="width:100%; height:100%; min-height:160px; background:linear-gradient(45deg, #0f2027, #203a43, #2c5364); display:flex; align-items:center; justify-content:center;">
+       <span style="color:#00e5ff; font-size:50px;">🔧</span>
+    </div>
+  </div>
+  <div class="steam-content">
+    <div class="steam-tag">ACTUALIZACIÓN Mayor / NOTAS DE PARCHE</div>
+    <h3 class="steam-title">ArcLab Update 1.4.0 - Codificador paso a paso</h3>
+    <div class="steam-desc">
+      Hemos implemetado un codificador y decodificador paso a paso para que puedas practicar las codificaciones ms comunes, con resoluciones certeras sin la necesidad de uso de IA, ésto incluye codificador GRAY, BCD, HAMMING, Punto fijo con y sin signo, además de Punto flotante, genera las reoluciones directo a latex con uno solo botón. También hemos añadido la opción de trabjar con tecnología de transistores CMOS, para construir compuertas, analizar el comportamiento logico, tiempos de retardo y demás datos de utilidad.
+    </div>
+    
+  </div>
+</div>
+</a>
+</style>
 <div class="date-header">21 DE AGOSTO</div>
 <div class="date-divider"></div>
 

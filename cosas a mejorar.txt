@@ -1,0 +1,31 @@
+mejoras para la v1.4.0:
+    -hay que implementar un codificador paso a paso, que soporte gray, hamming, complemento a 2,
+    punto fijo con y sin signo, adeás de punto flotanto con y sin signo
+
+    -hay que implementar en el diagrama logico compuertas cmos, que se genera tabla de verdad y los demás
+    datos de la hoja tecnica
+
+    -hay que modificar el ribbon bar del diagrama logico, para que incluya los modulos y registros, además
+    de las nuevas compuertas cmos.
+
+    -incorporar a los gestos posibles, la selección multiple de objetos, arrastrarlos y duplicarlos, además de 
+    poder limitar con shift el ajuste de los nodos a 20px por movimiento, para mayor precisión.
+
+    -revisar la diagramación de tiempos, hay una respuesta erratica al momento de añadir nuevas lineas de tiempo
+    se generan errores en los elementos visuales, adempas de que se corrempo el timepo maximo del diagrama
+
+    - en el resolvedor booleano, añadir una opción configuable del resolvedor, elegir una resolución elementos
+    en una cantidad minima de pasos, elegir una resolución "más humana", una opción en la que solo se utilice un
+    axioma por linea de resolución, etc.
+
+    - resolver que para los diagramas FSM, no aparezcan las opciones del diagrama logico, que por ocntrario aparezcan
+    opciones uties a esa pestaña, como el añdir un nuevo estado, seleccion multiple de elementos, arrastrarlos,
+    copiarlo, borrarlos, etc.
+
+    -añadir un previsualizador de conexión en el diagrama de fsm (tal cual en el diagrama logico), mejorar el box colider
+    para enrega runa mejor experiencia en la confección de maquinas de estado
+mejoras para la v1.4.1:
+    - generar directamente png además de solo el .svg
+    - mejorar la descricíón del software al presionar ayuda\acer de arclab
+    -añadir configuración visual para que el usario pueda trabajr con conla distribución que el prefiera, como minimizar o mover el editro de rtl, el gestor de archivos, modo claro, etc.
+    - incorporar un gestor de archivos dependientes de otros, a modo de reconocer mejor la función demodulos independientes sin la necesidad de identarlos el en el editor de rtl
