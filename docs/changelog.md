@@ -85,7 +85,7 @@
   </div>
   <div class="steam-content">
     <div class="steam-tag">ACTUALIZACIÓN Menor / NOTAS DE PARCHE</div>
-    <h3 class="steam-title">ArcLab Update 1.3.4 - Codificador paso a paso</h3>
+    <h3 class="steam-title">ArcLab Update 1.3.4 - Tabla de transiciones</h3>
     <div class="steam-desc">
       Hemos habiliado el generador de tabla de transiciones, buscando que sea más facil documentar y/o revisar las maquinas de estado implmentadas, hemos corregiod algunos errores en la generación de esquemas y hemos mejorado la generación de la equivalencia entre maquina de Moore y de Mealy, proximamente implmentaremos el generador de RTL c:.
     </div>
