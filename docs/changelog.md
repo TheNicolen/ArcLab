@@ -72,7 +72,7 @@
   margin-bottom: 15px;
 }
 </style>
-<div class="date-header">4 DE SEPTIEMBRE</div>
+<div class="date-header">15 DE SEPTIEMBRE</div>
 <div class="date-divider"></div>
 
 <a href="#v20261" style="text-decoration: none;">
@@ -84,10 +84,10 @@
     </div>
   </div>
   <div class="steam-content">
-    <div class="steam-tag">ACTUALIZACIÓN Mayor / NOTAS DE PARCHE</div>
-    <h3 class="steam-title">ArcLab Update 1.4.0 - Codificador paso a paso</h3>
+    <div class="steam-tag">ACTUALIZACIÓN Menor / NOTAS DE PARCHE</div>
+    <h3 class="steam-title">ArcLab Update 1.3.4 - Codificador paso a paso</h3>
     <div class="steam-desc">
-      Hemos implemetado un codificador y decodificador paso a paso para que puedas practicar las codificaciones ms comunes, con resoluciones certeras sin la necesidad de uso de IA, ésto incluye codificador GRAY, BCD, HAMMING, Punto fijo con y sin signo, además de Punto flotante, genera las reoluciones directo a latex con uno solo botón. También hemos añadido la opción de trabjar con tecnología de transistores CMOS, para construir compuertas, analizar el comportamiento logico, tiempos de retardo y demás datos de utilidad.
+      Hemos habiliado el generador de tabla de transiciones, buscando que sea más facil documentar y/o revisar las maquinas de estado implmentadas, hemos corregiod algunos errores en la generación de esquemas y hemos mejorado la generación de la equivalencia entre maquina de Moore y de Mealy, proximamente implmentaremos el generador de RTL c:.
     </div>
     
   </div>

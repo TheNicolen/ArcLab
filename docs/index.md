@@ -23,7 +23,7 @@ hide:
   </p>
 
   <p style="color: #00e5ff; font-size: 1em; letter-spacing: 1px;">
-    V 1.3.3 &nbsp;•&nbsp; Alpha Release
+    V 1.3.4 &nbsp;•&nbsp; Alpha Release
   </p>
 
   <div style="margin-top: 30px;">
